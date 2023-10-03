@@ -38,6 +38,8 @@
 - Определяет задание которое может выполнить пользователь.
 11. **TaskType**
 - Определяет тип задания.
+12. **TaskTypes**
+- Связывающая сущность для Task и TaskType
 
 ## 3. Описание таблицы
 1. **User**
@@ -105,7 +107,7 @@
 9. **Task**
 - Поля
   - Идентификатор (ID): integer, primary key, auto-increment.
-  - Название: string, not null.
+  - Название: string, unique, not null.
   - Описание: string, not null.
   - Время создания: datetime, not null.
   - Дедлайн: datetime, not null.
@@ -118,4 +120,5 @@
   - Название: string, unique, not null.
 - Связь
   - К типу могут принадлежать несколько заданий, задания могут иметь несколько типов (Many-to-Many).
-![Diagram](Structure.png)
+![Diagram](LR1Diagram.drawio)
+![Diagram](LR2Diagram.drawio)
