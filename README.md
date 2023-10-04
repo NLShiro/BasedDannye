@@ -121,4 +121,3 @@
 - Связь
   - К типу могут принадлежать несколько заданий, задания могут иметь несколько типов (Many-to-Many).
 ![Diagram](LR1Diagram.drawio.png)
-![Diagram](LR2Diagram.drawio.png)
